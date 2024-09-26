@@ -1,11 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delegate</title>
-</head>
-<body>
-    <h1>Delegate</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Innovation & Transformation Summit</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rufina:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- title of site -->
+    <title>EWE</title>
+
+    <!-- For favicon png -->
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/logo/favicon.png"
+    />
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <!--linear icon css-->
+    <link rel="stylesheet" href="assets/css/linearicons.css" />
+
+    <!--flaticon.css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <!--bootstrap.min.css-->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
+
+    <!-- bootsnav -->
+    <!-- <link rel="stylesheet" href="assets/css/bootsnav.css" /> -->
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/dits.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <style>
+
+      .container {
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      .form-control {
+        margin-bottom: 1rem;
+      }
+
+      /* Add padding to avoid content touching edges */
+      .form-section {
+        padding: 15px;
+      }
+
+      .footer a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      #submitButton {
+        background-color: #007bff;
+        color: white;
+        border: none;
+      }
+
+      #submitButton:hover {
+        background-color: #0056b3;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .footer {
+          text-align: center;
+        }
+
+        .footer .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="https://omandits.com">
+          <img
+            src="./assets/images/dits.png"
+            width="60"
+            alt="Digital Innovation & Transformation Summit"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://omandits.com">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://omandits.com">Happenings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://omandits.com">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://omandits.com">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://omandits.com">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://omandits.com">Agenda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Delegate Registration Form -->
+    <section class="container my-5">
+      <h2 class="text-center text-info mb-4">Delegate Registration Form</h2>
+
+      <div class="row form-section">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="registrationCode" class="form-label"
+              >Registration Code (optional)</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="registrationCode"
+              name="registrationCode"
+              placeholder="Enter registration code if available"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="title" class="form-label">Title *</label>
+            <select id="title" class="form-control" name="title" required>
+              <option value="" disabled selected>Please select</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="firstname" class="form-label">First name *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstname"
+              name="firstname"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Last name *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              name="lastname"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="jobtitle" class="form-label">Job title *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="jobtitle"
+              name="jobtitle"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="companyname" class="form-label">Company name *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="companyname"
+              name="companyname"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email *</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Mobile *</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="role" class="form-label"
+              >What is your role/authority in dealing with solution providers
+              for your organisation? *</label
+            >
+            <select id="role" class="form-control" name="role" required>
+              <option value="" disabled selected>Please select</option>
+              <option value="Final decision maker">Final decision maker</option>
+              <option value="One of the final decision makers">
+                One of the final decision makers
+              </option>
+              <option value="I refer and influence the decision">
+                I refer and influence the decision
+              </option>
+              <option value="I'm not involved at all">
+                I'm not involved at all
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="industry" class="form-label">Industry sector *</label>
+            <select id="industry" class="form-control" name="industry" required>
+              <option value="" disabled selected>Please select</option>
+              <!-- Add more industries as necessary -->
+              <option value="Accounting">Accounting</option>
+              <option value="Architecture & Planning">
+                Architecture & Planning
+              </option>
+              <option value="Banking">Banking</option>
+              <option value="IT Services">IT Services</option>
+              <option value="Education">Education</option>
+              <!-- More options -->
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="country" class="form-label">Country *</label>
+            <select id="country" class="form-control" name="country" required>
+              <option value="oman" disabled selected>Oman</option>
+              <!-- JavaScript will populate this dropdown -->
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="employees" class="form-label"
+              >Total number of employees *</label
+            >
+            <select
+              id="employees"
+              class="form-control"
+              name="employees"
+              required
+            >
+              <option value="" disabled selected>Please select</option>
+              <option value="0 - 100">0 - 100</option>
+              <option value="100 - 500">100 - 500</option>
+              <option value="500 - 1000">500 - 1000</option>
+              <option value="1000 - 10000">1000 - 10000</option>
+              <option value="10000 and Above">10000 and Above</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="solutions" class="form-label"
+              >Are you looking for any of the following solutions? *</label
+            >
+            <select
+              id="solutions"
+              class="form-control"
+              name="solutions"
+              required
+            >
+              <option value="" disabled selected>Please select</option>
+              <option value="PayTech">PayTech</option>
+              <option value="RegTech">RegTech</option>
+              <option value="Accounting">Accounting</option>
+              <option value="Blockchain & Cryptocurrency">
+                Blockchain & Cryptocurrency
+              </option>
+              <!-- More options -->
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="budget" class="form-label"
+              >How much funding has been designated for these technological
+              advancements? *</label
+            >
+            <select id="budget" class="form-control" name="budget" required>
+              <option value="" disabled selected>Please select</option>
+              <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+              <option value="$100,000 - $200,000">$100,000 - $200,000</option>
+              <option value="$200,000 - $300,000">$200,000 - $300,000</option>
+              <option value="$1,000,000 and Above">$1,000,000 and Above</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="timing" class="form-label"
+              >When do you anticipate implementing this solution? *</label
+            >
+            <select id="timing" class="form-control" name="timing" required>
+              <option value="" disabled selected>Please select</option>
+              <option value="0 - 3 months">0 - 3 months</option>
+              <option value="3 - 6 months">3 - 6 months</option>
+              <option value="6 - 9 months">6 - 9 months</option>
+              <option value="1 year">1 year</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Referral Section -->
+      <div class="row form-section">
+        <h4 class="text-info my-3">
+          Would you like to nominate/refer someone to attend the event?
+        </h4>
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="referee_fullname" class="form-label">Full name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="referee_fullname"
+              name="referee_fullname"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="referee_companyname" class="form-label"
+              >Company name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="referee_companyname"
+              name="referee_companyname"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="referee_jobtitle" class="form-label">Job title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="referee_jobtitle"
+              name="referee_jobtitle"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="referee_emailid" class="form-label">Email ID</label>
+            <input
+              type="email"
+              class="form-control"
+              id="referee_emailid"
+              name="referee_emailid"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="referee_phoneno" class="form-label">Phone number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="referee_phoneno"
+              name="referee_phoneno"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Confirmation Section -->
+      <div class="form-section">
+        <h4 class="text-info">Confirmation</h4>
+        <div class="mb-3">
+          <label>
+            <input type="checkbox" name="checkbox1" required />
+            By filling up this form, I agree to the terms and conditions. I
+            officially accept to participate at the event.
+          </label>
+        </div>
+        <div class="mb-3">
+          <label>
+            <input type="checkbox" name="checkbox2" />
+            I approve organizers to share my contact information with
+            sponsors/partners for marketing purposes.
+          </label>
+        </div>
+        <div class="mb-3">
+          <label>
+            <input type="checkbox" name="checkbox3" />
+            I consent to receiving updates via email regarding events and
+            activities.
+          </label>
+        </div>
+        <div class="mb-3">
+          <label>
+            <input type="checkbox" name="checkbox4" required />
+            I agree to the Terms and Conditions and Privacy Policy.
+          </label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button id="submitButton" class="btn btn-primary px-5 py-2" disabled>
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="contact">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="single-footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html">ECHO WAVE EXPO</a>
+                </div>
+                <p>
+                  For any queries or additional information, please reach out to
+                  us
+                </p>
+                <div class="footer-contact">
+                  <p>info@genfinityglobal.com</p>
+                  <!-- <p>+91 99167 46169</p> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-2 col-sm-6">
+            <div class="single-footer-widget">
+              <h2>about devloon</h2>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">career</a></li>
+                <li>
+                  <a href="#">terms <span> of service</span></a>
+                </li>
+                <li><a href="#">privacy policy</a></li>
+              </ul>
+            </div>
+          </div> -->
+            <!-- <div class="col-md-3 col-xs-12">
+            <div class="single-footer-widget">
+              <h2>top brands</h2>
+              <div class="row">
+                <div class="col-md-7 col-xs-6">
+                  <ul>
+                    <li><a href="#">BMW</a></li>
+                    <li><a href="#">lamborghini</a></li>
+                    <li><a href="#">camaro</a></li>
+                    <li><a href="#">audi</a></li>
+                    <li><a href="#">infiniti</a></li>
+                    <li><a href="#">nissan</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-5 col-xs-6">
+                  <ul>
+                    <li><a href="#">ferrari</a></li>
+                    <li><a href="#">porsche</a></li>
+                    <li><a href="#">land rover</a></li>
+                    <li><a href="#">aston martin</a></li>
+                    <li><a href="#">mersedes</a></li>
+                    <li><a href="#">opel</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> -->
+            <div class="col-md-offset-1 col-md-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h2>Follow us on social media for updates and sneak peeks</h2>
+                <a
+                  style="color: white"
+                  href="https://www.instagram.com/echowaveexpo?igsh=MXI2czc5NjMwcHF5cg=="
+                  ><img
+                    style="width: 40px; height: 40px"
+                    src="./assets/images/logo/instagram.png"
+                /></a>
+                <a
+                  style="color: white"
+                  href="https://www.linkedin.com/showcase/echowave-expo/"
+                  ><img
+                    style="width: 40px; height: 40px"
+                    src="./assets/images/logo/linkedin.png"
+                /></a>
+              </div>
+            </div>
+            <!-- <div class="col-md-offset-1 col-md-3 col-sm-6">
+            <div class="single-footer-widget">
+              <h2>news letter</h2>
+              <div class="footer-newsletter">
+                <p>Subscribe to get latest news update and informations</p>
+              </div>
+              <div class="hm-foot-email">
+                <div class="foot-email-box">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Add Email"
+                  />
+                </div>
+                <div class="foot-email-subscribe">
+                  <span><i class="fa fa-arrow-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>
+                &copy; 2023 EchoWave. All rights reserved. Organized by
+                Genfinity Global.
+              </p>
+              <!--/p-->
+            </div>
+            <div class="col-sm-6">
+              <div class="footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.footer-copyright-->
+      </div>
+      <!--/.container-->
+
+      <div id="scroll-Top">
+        <div class="return-to-top">
+          <i
+            class="fa fa-angle-up"
+            id="scroll-top"
+            data-toggle="tooltip"
+            data-placement="top"
+            title=""
+            data-original-title="Back to Top"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
+      <!--/.scroll-Top-->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+
+      // Function to get the country code
+      function getCountryCode() {
+        const countryCode = phoneInput.getSelectedCountryData().iso2;
+        console.log(countryCode);
+      }
+
+      // Example script for fetching and sorting countries (you can modify it to suit your needs)
+      function fetchDataAndSort() {
+        fetch("https://restcountries.com/v3.1/all")
+          .then((response) => response.json())
+          .then((data) => {
+            data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+            const dropdown = document.getElementById("country");
+            data.forEach((country) => {
+              const option = document.createElement("option");
+              option.value = country.cca2;
+              option.text = country.name.common;
+              dropdown.appendChild(option);
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching data: ", error);
+          });
+      }
+      fetchDataAndSort();
+    </script>
+  </body>
 </html>
