@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Innovation & Transformation Summit</title>
+    <!-- meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet"
@@ -50,445 +54,833 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
 
     <!--bootstrap.min.css-->
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- bootsnav -->
-    <!-- <link rel="stylesheet" href="assets/css/bootsnav.css" /> -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css" />
 
     <!--style.css-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--responsive.css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/dits.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-    />
-    <style>
 
-      .container {
-        padding: 30px;
-        border-radius: 10px;
-      }
+    <script src="./assets/js/script.js" defer></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
-      .form-control {
-        margin-bottom: 1rem;
-      }
-
-      /* Add padding to avoid content touching edges */
-      .form-section {
-        padding: 15px;
-      }
-
-      .footer a {
-        text-decoration: none;
-        color: white;
-      }
-
-      .footer a:hover {
-        text-decoration: underline;
-      }
-
-      #submitButton {
-        background-color: #007bff;
-        color: white;
-        border: none;
-      }
-
-      #submitButton:hover {
-        background-color: #0056b3;
-      }
-
-      @media only screen and (max-width: 767px) {
-        .footer {
-          text-align: center;
-        }
-
-        .footer .row {
-          flex-direction: column;
-        }
-      }
-    </style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "r2xBux3zxL5hcXfDg",
+        });
+      })();
+    </script>
   </head>
 
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!--welcome-hero start -->
+    <section id="home" class="welcome-hero">
+      <!-- top-area Start -->
+      <div class="top-area">
+        <div class="header-area">
+          <!-- Start Navigation -->
+          <nav
+            class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy"
+            data-minus-value-desktop="70"
+            data-minus-value-mobile="55"
+            data-speed="1000"
+            style="background-color: black"
+          >
+            <div class="container">
+              <!-- Start Header Navigation -->
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#navbar-menu"
+                >
+                  <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html"
+                  >Echo Wave Expo<span></span
+                ></a>
+              </div>
+              <!--/.navbar-header-->
+              <!-- End Header Navigation -->
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse menu-ui-design"
+                id="navbar-menu"
+              >
+                <ul
+                  class="nav navbar-nav navbar-right"
+                  data-in="fadeInDown"
+                  data-out="fadeOutUp"
+                >
+                  <li class="scroll active"><a href="index.html">home</a></li>
+                  <li class="scroll"><a href="index.html">About</a></li>
+                  <li class="scroll">
+                    <a href="#featured-cars">Featured Technologies</a>
+                  </li>
+                  <!-- <li class="scroll"><a href="#brand">brands</a></li>
+                  <li class="scroll"><a href="#contact">contact</a></li> -->
+                </ul>
+                <!--/.nav -->
+              </div>
+              <!-- /.navbar-collapse -->
+            </div>
+            <!--/.container-->
+          </nav>
+          <!--/nav-->
+          <!-- End Navigation -->
+        </div>
+        <!--/.header-area-->
+        <div class="clearfix"></div>
+      </div>
+      <!-- /.top-area-->
+      <!-- top-area End -->
+    </section>
+
+    <!-- Delegate Registration Form Section -->
+    <section id="registration" style="padding: 50px 0; margin-top: 10rem">
       <div class="container">
-        <a class="navbar-brand" href="https://omandits.com">
-          <img
-            src="./assets/images/dits.png"
-            width="60"
-            alt="Digital Innovation & Transformation Summit"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://omandits.com">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://omandits.com">Happenings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://omandits.com">Speakers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://omandits.com">Sponsors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://omandits.com">Partners</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://omandits.com">Agenda</a>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 style="font-size: xx-large">Delegate Registration Form</h2>
+            <form>
+              <!-- Delegate Information Section -->
+              <div class="form-group row">
+                <!-- <div class="col-md-6">
+                  <label for="regCode"
+                    >If you have a registration code, please enter here</label
+                  >
+                  <input
+                    type="text"
+                    id="regCode"
+                    name="regCode"
+                    class="form-control"
+                    placeholder="Enter code"
+                  />
+                </div> -->
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="firstName"
+                    style="font-size: medium; font-weight: 300"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="lastName"
+                    style="font-size: medium; font-weight: 300"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="jobTitle"
+                    style="font-size: medium; font-weight: 300"
+                    >Job Title</label
+                  >
+                  <input
+                    type="text"
+                    id="jobTitle"
+                    name="jobTitle"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="company"
+                    style="font-size: medium; font-weight: 300"
+                    >Company Name</label
+                  >
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6 mt-5">
+                  <label
+                    id="label-email"
+                    style="font-size: medium; font-weight: 300"
+                    for="email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="mobile"
+                    style="font-size: medium; font-weight: 300"
+                    >Mobile</label
+                  >
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="industry"
+                    style="font-size: medium; font-weight: 300"
+                    >Industry Sector</label
+                  >
+                  <select
+                    id="industry"
+                    class="form-control"
+                    name="industry"
+                    required
+                  >
+                    <option value="" disabled selected>Please select</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Architecture & Planning">
+                      Architecture & Planning
+                    </option>
+                    <option value="Arts and Crafts">Arts and Crafts</option>
+                    <option value="Alternate Dispute Resolution">
+                      Alternate Dispute Resolution
+                    </option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Alternate Medicine">
+                      Alternate Medicine
+                    </option>
+                    <option value="Animation">Animation</option>
+                    <option value="Banking">Banking</option>
+                    <option value="Apparel & Fashion">Apparel & Fashion</option>
+                    <option value="Biotechnology">Biotechnology</option>
+                    <option value="Broadcast Media">Broadcast Media</option>
+                    <option value="Business Supplies and Equipment">
+                      Business Supplies and Equipment
+                    </option>
+                    <option value="Capital Markets">Capital Markets</option>
+                    <option value="Chemicals">Chemicals</option>
+                    <option value="Civic & Social Organization">
+                      Civic & Social Organization
+                    </option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Commercial Real Estate">
+                      Commercial Real Estate
+                    </option>
+                    <option value="Computer & Network Security">
+                      Computer & Network Security
+                    </option>
+                    <option value="Computer Games">Computer Games</option>
+                    <option value="Computer Hardware">Computer Hardware</option>
+                    <option value="Computer Networking">
+                      Computer Networking
+                    </option>
+                    <option value="Computer Software">Computer Software</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Consumer Electronics">
+                      Consumer Electronics
+                    </option>
+                    <option value="Consumer Goods">Consumer Goods</option>
+                    <option value="Consumer Services">Consumer Services</option>
+                    <option value="Cosmetics">Cosmetics</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Defence & Space">Defence & Space</option>
+                    <option value="Design">Design</option>
+                    <option value="Education Management">
+                      Education Management
+                    </option>
+                    <option value="E-Learning">E-Learning</option>
+                    <option value="Electrical/Electronic Manufacturing">
+                      Electrical/Electronic Manufacturing
+                    </option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Environmental Services">
+                      Environmental Services
+                    </option>
+                    <option value="Events Services">Events Services</option>
+                    <option value="Executive Office">Executive Office</option>
+                    <option value="Facilities Services">
+                      Facilities Services
+                    </option>
+                    <option value="Farming">Farming</option>
+                    <option value="Financial Services">
+                      Financial Services
+                    </option>
+                    <option value="Fine Art">Fine Art</option>
+                    <option value="Fishery">Fishery</option>
+                    <option value="Food & Beverages">Food & Beverages</option>
+                    <option value="Food Production">Food Production</option>
+                    <option value="Fund-Raising">Fund-Raising</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Gambling & Casinos">
+                      Gambling & Casinos
+                    </option>
+                    <option value="Glass, Ceramics & Concrete">
+                      Glass, Ceramics & Concrete
+                    </option>
+                    <option value="Government Administration">
+                      Government Administration
+                    </option>
+                    <option value="Government Relations">
+                      Government Relations
+                    </option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Health, Wellness and Fitness">
+                      Health, Wellness and Fitness
+                    </option>
+                    <option value="Higher Education">Higher Education</option>
+                    <option value="Hospital & Health Care">
+                      Hospital & Health Care
+                    </option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Import and Export">Import and Export</option>
+                    <option value="Individual & Family Services">
+                      Individual & Family Services
+                    </option>
+                    <option value="Information Technology and Services">
+                      Information Technology and Services
+                    </option>
+                    <option value="Insurance">Insurance</option>
+                    <option value="International Trade and Development">
+                      International Trade and Development
+                    </option>
+                    <option value="Internet">Internet</option>
+                    <option value="Investment Banking">
+                      Investment Banking
+                    </option>
+                    <option value="Investment Management">
+                      Investment Management
+                    </option>
+                    <option value="Judiciary">Judiciary</option>
+                    <option value="Law Enforcement">Law Enforcement</option>
+                    <option value="Law Practice">Law Practice</option>
+                    <option value="Legal Services">Legal Services</option>
+                    <option value="Legislative Office">
+                      Legislative Office
+                    </option>
+                    <option value="Leisure">Leisure</option>
+                    <option value="Libraries">Libraries</option>
+                    <option value="Logistics and Supply Chain">
+                      Logistics and Supply Chain
+                    </option>
+                    <option value="Luxury Goods & Jewellery">
+                      Luxury Goods & Jewellery
+                    </option>
+                    <option value="Machinery">Machinery</option>
+                    <option value="Management Consulting">
+                      Management Consulting
+                    </option>
+                    <option value="Maritime">Maritime</option>
+                    <option value="Market Research">Market Research</option>
+                    <option value="Marketing and Advertising">
+                      Marketing and Advertising
+                    </option>
+                    <option value="Mechanical and Advertising">
+                      Mechanical and Advertising
+                    </option>
+                    <option value="Mechanical or Industrial Engineering">
+                      Mechanical or Industrial Engineering
+                    </option>
+                    <option value="Media Production">Media Production</option>
+                    <option value="Medical Devices">Medical Devices</option>
+                    <option value="Medical Practice">Medical Practice</option>
+                    <option value="Mental Health Care">
+                      Mental Health Care
+                    </option>
+                    <option value="Military">Military</option>
+                    <option value="Mining & Metals">Mining & Metals</option>
+                    <option value="Motion Pictures and Film">
+                      Motion Pictures and Film
+                    </option>
+                    <option value="Museums and Institutions">
+                      Museums and Institutions
+                    </option>
+                    <option value="Music">Music</option>
+                    <option value="Nanotechnology">Nanotechnology</option>
+                    <option value="Newspapers">Newspapers</option>
+                    <option value="Nonprofit Organization Management<">
+                      Nonprofit Organization Management
+                    </option>
+                    <option value="Oil & Energy">Oil & Energy</option>
+                    <option value="Outsourcing/Offshoring">
+                      Outsourcing/Offshoring
+                    </option>
+                    <option value="Package/Freight Delivery">
+                      Package/Freight Delivery
+                    </option>
+                    <option value="Packaging and Containers">
+                      Packaging and Containers
+                    </option>
+                    <option value="Paper & Forest Products">
+                      Paper & Forest Products
+                    </option>
+                    <option value="Pharmaceuticals">Pharmaceuticals</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Political Organization">
+                      Political Organization
+                    </option>
+                    <option value="Primary/Secondary Education">
+                      Primary/Secondary Education
+                    </option>
+                    <option value="Printing">Printing</option>
+                    <option value="Professional Training & Coaching">
+                      Professional Training & Coaching
+                    </option>
+                    <option value="Program Development">
+                      Program Development
+                    </option>
+                    <option value="Public Policy">Public Policy</option>
+                    <option value="Public Relations and Communications">
+                      Public Relations and Communications
+                    </option>
+                    <option value="Public Safety">Public Safety</option>
+                    <option value="Publishing">Publishing</option>
+                    <option value="Railroad Manufacture">
+                      Railroad Manufacture
+                    </option>
+                    <option value="Ranching">Ranching</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Recreational Facilities and Services">
+                      Recreational Facilities and Services
+                    </option>
+                    <option value="Religious Institutions">
+                      Religious Institutions
+                    </option>
+                    <option value="Renewables and Environment">
+                      Renewables and Environment
+                    </option>
+                    <option value="Research">Research</option>
+                    <option value="Restaurants">Restaurants</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Security and Investigations">
+                      Security and Investigations
+                    </option>
+                    <option value="Semiconductors">Semiconductors</option>
+                    <option value="Shipbuilding">Shipbuilding</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Staffing and Recruiting">
+                      Staffing and Recruiting
+                    </option>
+                    <option value="Supermarkets">Supermarkets</option>
+                    <option value="Telecommunications">
+                      Telecommunications
+                    </option>
+                    <option value="Textiles">Textiles</option>
+                    <option value="Think Tanks">Think Tanks</option>
+                    <option value="Tobacco">Tobacco</option>
+                    <option value="Translation and Localization">
+                      Translation and Localization
+                    </option>
+                    <option value="Transportation/ Trucking/ Railroad">
+                      Transportation/ Trucking/ Railroad
+                    </option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Venture Capital & Private Equity">
+                      Venture Capital & Private Equity
+                    </option>
+                    <option value="Veterinary">Veterinary</option>
+                    <option value="Warehousing">Warehousing</option>
+                    <option value="Wholesale">Wholesale</option>
+                    <option value="Wine and Spirits">Wine and Spirits</option>
+                    <option value="Wireless">Wireless</option>
+                    <option value="Writing and Editing">
+                      Writing and Editing
+                    </option>
+                    <option value="FinTech">FinTech</option>
+                    <option value="Blockchain">Blockchain</option>
+                    <option value="ICO/IEO/STO">ICO/IEO/STO</option>
+                    <option value="Mining">Mining</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="OTT">OTT</option>
+                    <option value="Ed-Tech">Ed-Tech</option>
+                    <option value="Esports">Esports</option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <!-- Add your options here -->
+                </div>
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="country"
+                    style="font-size: medium; font-weight: 300"
+                    >Country</label
+                  >
+                  <select
+                    id="country"
+                    name="country"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" disabled selected>Select Country</option>
+                    <!-- Add your options here -->
+                  </select>
+                </div>
+              </div>
+
+              <!-- Additional Information -->
+              <div class="form-group row">
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="employees"
+                    style="font-size: medium; font-weight: 300"
+                    >Total Number of Employees</label
+                  >
+                  <select
+                    id="employees"
+                    class="form-control"
+                    name="employees"
+                    required
+                  >
+                    <option value="" disabled selected>Please select</option>
+                    <option value="0 - 100">0 - 100</option>
+                    <option value="100 - 500">100 - 500</option>
+                    <option value="500 - 1000">500 - 1000</option>
+                    <option value="1000 - 10000">1000 - 10000</option>
+                    <option value="10000 and Above">10000 and Above</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="solutions"
+                    style="font-size: medium; font-weight: 300"
+                    >Looking for solutions?</label
+                  >
+                  <select
+                    id="solutions"
+                    name="solutions"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" disabled selected>Please select</option>
+                    <option value="PayTech">PayTech</option>
+                    <option value="RegTech">RegTech</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Open Banking">Open Banking</option>
+                    <option value="Challenger Bank">Challenger Bank</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="BNPL">BNPL</option>
+                    <option value="WealthTech">WealthTech</option>
+                    <option value="Blockchain & Cryptocurrency">
+                      Blockchain & Cryptocurrency
+                    </option>
+                    <option value="InsurTech">InsurTech</option>
+                    <option value="LendTech">LendTech</option>
+                    <option value="Mobile Payments">Mobile Payments</option>
+                    <option value="Tradetech">Tradetech</option>
+                    <option value="RoboAdvising & Stock-Trading">
+                      RoboAdvising & Stock-Trading
+                    </option>
+                    <option value="International Money Transfers">
+                      International Money Transfers
+                    </option>
+                    <option value="Equity Financing">Equity Financing</option>
+                    <option value="BankTech">BankTech</option>
+                    <option value="Peer-to-Peer Lending and Borrowing">
+                      Peer-to-Peer Lending and Borrowing
+                    </option>
+                    <option value="Crowdfunding">Crowdfunding</option>
+                    <option value="Personal Finance Management">
+                      Personal Finance Management
+                    </option>
+                    <option value="Alternative Credit Scoring">
+                      Alternative Credit Scoring
+                    </option>
+                    <option value="Transaction Delivery">
+                      Transaction Delivery
+                    </option>
+                    <option value="Digital Wallets">Digital Wallets</option>
+                    <option value="Digital Banking">Digital Banking</option>
+                    <option value="Quote Aggregators">Quote Aggregators</option>
+                    <option value="Augmented Intelligence Solutions">
+                      Augmented Intelligence Solutions
+                    </option>
+                    <option value="Data Privacy Automation">
+                      Data Privacy Automation
+                    </option>
+                    <option value="Hybrid Cloud & Cloud Computing">
+                      Hybrid Cloud & Cloud Computing
+                    </option>
+                    <option
+                      value="Data visualization / Data Virtualization technologies"
+                    >
+                      Data visualization / Data Virtualization technologies
+                    </option>
+                    <option value="Cloud Migration">Cloud Migration</option>
+                    <option value="Metadata Management">
+                      Metadata Management
+                    </option>
+                    <option value="AI Governance">AI Governance</option>
+                    <option value="Data Governance Tools">
+                      Data Governance Tools
+                    </option>
+                    <option value="Adaptive Artificial Intelligence">
+                      Adaptive Artificial Intelligence
+                    </option>
+                    <option value="BI Solutions">BI Solutions</option>
+                    <option value="NoSql Databases">NoSql Databases</option>
+                    <option value="Data Fabric Software Solutions">
+                      Data Fabric Software Solutions
+                    </option>
+                    <option value="Graph Technology">Graph Technology</option>
+                    <option value="Big Data Security Solutions">
+                      Big Data Security Solutions
+                    </option>
+                    <option value="Open Source data & Machine learning tools">
+                      Open Source data & Machine learning tools
+                    </option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <!-- Add your options here -->
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="authority"
+                    style="font-size: medium; font-weight: 300"
+                    >Your authority while dealing with solution providers</label
+                  >
+                  <select
+                    id="authority"
+                    name="authority"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" selected disabled>Please select</option>
+                    <option value="Final decision maker">
+                      Final decision maker
+                    </option>
+                    <option value="One of the final decision maker">
+                      One of the final decision maker
+                    </option>
+                    <option value="I refer and influence the decision">
+                      I refer and influence the decision
+                    </option>
+                    <option value="I'm not involved at all">
+                      I'm not involved at all
+                    </option>
+                    <!-- Add your options here -->
+                  </select>
+                </div>
+                <div class="col-md-6 mt-5">
+                  <label
+                    for="funding"
+                    style="font-size: medium; font-weight: 300"
+                    >Funding for technological advancements</label
+                  >
+                  <select
+                    id="funding"
+                    name="funding"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" disabled selected>Please select</option>
+                    <option value="$50,000 - $1,00,000">
+                      $50,000 - $1,00,000
+                    </option>
+                    <option value="$1,00,000 - $2,00,000">
+                      $1,00,000 - $2,00,000
+                    </option>
+                    <option value="$2,00,000 - $3,00,000">
+                      $2,00,000 - $3,00,000
+                    </option>
+                    <option value="$3,00,000 - $4,00,000">
+                      $3,00,000 - $4,00,000
+                    </option>
+                    <option value="$4,00,000 - $5,00,000">
+                      $4,00,000 - $5,00,000
+                    </option>
+                    <option value="$5,00,000 - $6,00,000">
+                      $5,00,000 - $6,00,000
+                    </option>
+                    <option value="$6,00,000 - $7,00,000">
+                      $6,00,000 - $7,00,000
+                    </option>
+                    <option value="$7,00,000 - $8,00,000">
+                      $7,00,000 - $8,00,000
+                    </option>
+                    <option value="$8,00,000 - $9,00,000">
+                      $8,00,000 - $9,00,000
+                    </option>
+                    <option value="1,000,000 and Above">
+                      1,000,000 and Above
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label
+                    for="implementation"
+                    style="font-size: medium; font-weight: 300"
+                    >When do you plan to implement?</label
+                  >
+                  <select
+                    id="implementation"
+                    name="implementation"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" disabled selected>Please select</option>
+                    <option value="0 - 3 months">0 - 3 months</option>
+                    <option value="3 - 6 months">3 - 6 months</option>
+                    <option value="6 - 9 months">6 - 9 months</option>
+                    <option value="1 - year">1 - year</option>
+                    <!-- Add your options here -->
+                  </select>
+                </div>
+              </div>
+
+              <!-- Nominate Someone Section -->
+              <h3 class="mt-10 mb-6">
+                Would you like to nominate/refer someone to attend the event?
+              </h3>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label
+                    for="nomineeName"
+                    style="font-size: medium; font-weight: 300"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="nomineeName"
+                    name="nomineeName"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="nomineeEmail"
+                    style="font-size: medium; font-weight: 300"
+                    >Email ID</label
+                  >
+                  <input
+                    type="email"
+                    id="nomineeEmail"
+                    name="nomineeEmail"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label
+                    for="nomineeCompany"
+                    style="font-size: medium; font-weight: 300"
+                    >Company Name</label
+                  >
+                  <input
+                    type="text"
+                    id="nomineeCompany"
+                    name="nomineeCompany"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="nomineePhone"
+                    style="font-size: medium; font-weight: 300"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    id="nomineePhone"
+                    name="nomineePhone"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <!-- Confirmation Section -->
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label style="font-size: medium; font-weight: 300">
+                    <input type="checkbox" name="confirmation" required />
+                    By ticking this form, I agree to the above terms and
+                    conditions.
+                  </label>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: center; width: 100%">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="
+                    font-size: larger;
+                    font-weight: 600;
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    margin: 20px;
+                  "
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <!-- Delegate Registration Form -->
-    <section class="container my-5">
-      <h2 class="text-center text-info mb-4">Delegate Registration Form</h2>
-
-      <div class="row form-section">
-        <!-- Left Column -->
-        <div class="col-md-6">
-          <div class="mb-3">
-            <label for="registrationCode" class="form-label"
-              >Registration Code (optional)</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="registrationCode"
-              name="registrationCode"
-              placeholder="Enter registration code if available"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="title" class="form-label">Title *</label>
-            <select id="title" class="form-control" name="title" required>
-              <option value="" disabled selected>Please select</option>
-              <option value="Mr">Mr</option>
-              <option value="Mrs">Mrs</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label for="firstname" class="form-label">First name *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="firstname"
-              name="firstname"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="lastname" class="form-label">Last name *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="lastname"
-              name="lastname"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="jobtitle" class="form-label">Job title *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="jobtitle"
-              name="jobtitle"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="companyname" class="form-label">Company name *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="companyname"
-              name="companyname"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Email *</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="phone" class="form-label">Mobile *</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="phone"
-              name="phone"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="role" class="form-label"
-              >What is your role/authority in dealing with solution providers
-              for your organisation? *</label
-            >
-            <select id="role" class="form-control" name="role" required>
-              <option value="" disabled selected>Please select</option>
-              <option value="Final decision maker">Final decision maker</option>
-              <option value="One of the final decision makers">
-                One of the final decision makers
-              </option>
-              <option value="I refer and influence the decision">
-                I refer and influence the decision
-              </option>
-              <option value="I'm not involved at all">
-                I'm not involved at all
-              </option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-md-6">
-          <div class="mb-3">
-            <label for="industry" class="form-label">Industry sector *</label>
-            <select id="industry" class="form-control" name="industry" required>
-              <option value="" disabled selected>Please select</option>
-              <!-- Add more industries as necessary -->
-              <option value="Accounting">Accounting</option>
-              <option value="Architecture & Planning">
-                Architecture & Planning
-              </option>
-              <option value="Banking">Banking</option>
-              <option value="IT Services">IT Services</option>
-              <option value="Education">Education</option>
-              <!-- More options -->
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label for="country" class="form-label">Country *</label>
-            <select id="country" class="form-control" name="country" required>
-              <option value="oman" disabled selected>Oman</option>
-              <!-- JavaScript will populate this dropdown -->
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label for="employees" class="form-label"
-              >Total number of employees *</label
-            >
-            <select
-              id="employees"
-              class="form-control"
-              name="employees"
-              required
-            >
-              <option value="" disabled selected>Please select</option>
-              <option value="0 - 100">0 - 100</option>
-              <option value="100 - 500">100 - 500</option>
-              <option value="500 - 1000">500 - 1000</option>
-              <option value="1000 - 10000">1000 - 10000</option>
-              <option value="10000 and Above">10000 and Above</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label for="solutions" class="form-label"
-              >Are you looking for any of the following solutions? *</label
-            >
-            <select
-              id="solutions"
-              class="form-control"
-              name="solutions"
-              required
-            >
-              <option value="" disabled selected>Please select</option>
-              <option value="PayTech">PayTech</option>
-              <option value="RegTech">RegTech</option>
-              <option value="Accounting">Accounting</option>
-              <option value="Blockchain & Cryptocurrency">
-                Blockchain & Cryptocurrency
-              </option>
-              <!-- More options -->
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label for="budget" class="form-label"
-              >How much funding has been designated for these technological
-              advancements? *</label
-            >
-            <select id="budget" class="form-control" name="budget" required>
-              <option value="" disabled selected>Please select</option>
-              <option value="$50,000 - $100,000">$50,000 - $100,000</option>
-              <option value="$100,000 - $200,000">$100,000 - $200,000</option>
-              <option value="$200,000 - $300,000">$200,000 - $300,000</option>
-              <option value="$1,000,000 and Above">$1,000,000 and Above</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label for="timing" class="form-label"
-              >When do you anticipate implementing this solution? *</label
-            >
-            <select id="timing" class="form-control" name="timing" required>
-              <option value="" disabled selected>Please select</option>
-              <option value="0 - 3 months">0 - 3 months</option>
-              <option value="3 - 6 months">3 - 6 months</option>
-              <option value="6 - 9 months">6 - 9 months</option>
-              <option value="1 year">1 year</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <!-- Additional Referral Section -->
-      <div class="row form-section">
-        <h4 class="text-info my-3">
-          Would you like to nominate/refer someone to attend the event?
-        </h4>
-
-        <div class="col-md-6">
-          <div class="mb-3">
-            <label for="referee_fullname" class="form-label">Full name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="referee_fullname"
-              name="referee_fullname"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="referee_companyname" class="form-label"
-              >Company name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="referee_companyname"
-              name="referee_companyname"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="referee_jobtitle" class="form-label">Job title</label>
-            <input
-              type="text"
-              class="form-control"
-              id="referee_jobtitle"
-              name="referee_jobtitle"
-            />
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="mb-3">
-            <label for="referee_emailid" class="form-label">Email ID</label>
-            <input
-              type="email"
-              class="form-control"
-              id="referee_emailid"
-              name="referee_emailid"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="referee_phoneno" class="form-label">Phone number</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="referee_phoneno"
-              name="referee_phoneno"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Confirmation Section -->
-      <div class="form-section">
-        <h4 class="text-info">Confirmation</h4>
-        <div class="mb-3">
-          <label>
-            <input type="checkbox" name="checkbox1" required />
-            By filling up this form, I agree to the terms and conditions. I
-            officially accept to participate at the event.
-          </label>
-        </div>
-        <div class="mb-3">
-          <label>
-            <input type="checkbox" name="checkbox2" />
-            I approve organizers to share my contact information with
-            sponsors/partners for marketing purposes.
-          </label>
-        </div>
-        <div class="mb-3">
-          <label>
-            <input type="checkbox" name="checkbox3" />
-            I consent to receiving updates via email regarding events and
-            activities.
-          </label>
-        </div>
-        <div class="mb-3">
-          <label>
-            <input type="checkbox" name="checkbox4" required />
-            I agree to the Terms and Conditions and Privacy Policy.
-          </label>
-        </div>
-      </div>
-
-      <!-- Submit Button -->
-      <div class="text-center">
-        <button id="submitButton" class="btn btn-primary px-5 py-2" disabled>
-          Submit
-        </button>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!--contact start-->
     <footer id="contact" class="contact">
       <div class="container">
         <div class="footer-top">
@@ -509,45 +901,45 @@
               </div>
             </div>
             <!-- <div class="col-md-2 col-sm-6">
-            <div class="single-footer-widget">
-              <h2>about devloon</h2>
-              <ul>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">career</a></li>
-                <li>
-                  <a href="#">terms <span> of service</span></a>
-                </li>
-                <li><a href="#">privacy policy</a></li>
-              </ul>
-            </div>
-          </div> -->
+              <div class="single-footer-widget">
+                <h2>about devloon</h2>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">career</a></li>
+                  <li>
+                    <a href="#">terms <span> of service</span></a>
+                  </li>
+                  <li><a href="#">privacy policy</a></li>
+                </ul>
+              </div>
+            </div> -->
             <!-- <div class="col-md-3 col-xs-12">
-            <div class="single-footer-widget">
-              <h2>top brands</h2>
-              <div class="row">
-                <div class="col-md-7 col-xs-6">
-                  <ul>
-                    <li><a href="#">BMW</a></li>
-                    <li><a href="#">lamborghini</a></li>
-                    <li><a href="#">camaro</a></li>
-                    <li><a href="#">audi</a></li>
-                    <li><a href="#">infiniti</a></li>
-                    <li><a href="#">nissan</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-5 col-xs-6">
-                  <ul>
-                    <li><a href="#">ferrari</a></li>
-                    <li><a href="#">porsche</a></li>
-                    <li><a href="#">land rover</a></li>
-                    <li><a href="#">aston martin</a></li>
-                    <li><a href="#">mersedes</a></li>
-                    <li><a href="#">opel</a></li>
-                  </ul>
+              <div class="single-footer-widget">
+                <h2>top brands</h2>
+                <div class="row">
+                  <div class="col-md-7 col-xs-6">
+                    <ul>
+                      <li><a href="#">BMW</a></li>
+                      <li><a href="#">lamborghini</a></li>
+                      <li><a href="#">camaro</a></li>
+                      <li><a href="#">audi</a></li>
+                      <li><a href="#">infiniti</a></li>
+                      <li><a href="#">nissan</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-5 col-xs-6">
+                    <ul>
+                      <li><a href="#">ferrari</a></li>
+                      <li><a href="#">porsche</a></li>
+                      <li><a href="#">land rover</a></li>
+                      <li><a href="#">aston martin</a></li>
+                      <li><a href="#">mersedes</a></li>
+                      <li><a href="#">opel</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> -->
+            </div> -->
             <div class="col-md-offset-1 col-md-3 col-sm-6">
               <div class="single-footer-widget">
                 <h2>Follow us on social media for updates and sneak peeks</h2>
@@ -568,25 +960,25 @@
               </div>
             </div>
             <!-- <div class="col-md-offset-1 col-md-3 col-sm-6">
-            <div class="single-footer-widget">
-              <h2>news letter</h2>
-              <div class="footer-newsletter">
-                <p>Subscribe to get latest news update and informations</p>
-              </div>
-              <div class="hm-foot-email">
-                <div class="foot-email-box">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Add Email"
-                  />
+              <div class="single-footer-widget">
+                <h2>news letter</h2>
+                <div class="footer-newsletter">
+                  <p>Subscribe to get latest news update and informations</p>
                 </div>
-                <div class="foot-email-subscribe">
-                  <span><i class="fa fa-arrow-right"></i></span>
+                <div class="hm-foot-email">
+                  <div class="foot-email-box">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Add Email"
+                    />
+                  </div>
+                  <div class="foot-email-subscribe">
+                    <span><i class="fa fa-arrow-right"></i></span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> -->
+            </div> -->
           </div>
         </div>
         <div class="footer-copyright">
@@ -628,31 +1020,22 @@
       </div>
       <!--/.scroll-Top-->
     </footer>
+    <!--/.contact-->
+    <!--contact end-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script>
-      const phoneInputField = document.querySelector("#phone");
-      const phoneInput = window.intlTelInput(phoneInputField, {
-        utilsScript:
-          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-      });
-
-      // Function to get the country code
-      function getCountryCode() {
-        const countryCode = phoneInput.getSelectedCountryData().iso2;
-        console.log(countryCode);
-      }
-
-      // Example script for fetching and sorting countries (you can modify it to suit your needs)
       function fetchDataAndSort() {
         fetch("https://restcountries.com/v3.1/all")
           .then((response) => response.json())
           .then((data) => {
+            // Sort the data alphabetically by country name
             data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-            const dropdown = document.getElementById("country");
+
+            var dropdown = document.getElementById("country");
+
+            // Loop through the sorted data and populate both dropdowns
             data.forEach((country) => {
-              const option = document.createElement("option");
+              var option = document.createElement("option");
               option.value = country.cca2;
               option.text = country.name.common;
               dropdown.appendChild(option);
@@ -662,7 +1045,117 @@
             console.error("Error fetching data: ", error);
           });
       }
+
+      // Call the function to fetch and populate both dropdowns
       fetchDataAndSort();
+    </script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          // console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
+
+      var counted = 0;
+      $(window).scroll(function () {
+        var oTop = $("#counter").offset().top - window.innerHeight;
+        if (counted == 0 && $(window).scrollTop() > oTop) {
+          $(".count").each(function () {
+            var $this = $(this),
+              countTo = $this.attr("data-count");
+            $({
+              countNum: $this.text(),
+            }).animate(
+              {
+                countNum: countTo,
+              },
+
+              {
+                duration: 2000,
+                easing: "swing",
+                step: function () {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                  $this.text(this.countNum);
+                  //alert('finished');
+                },
+              }
+            );
+          });
+          counted = 1;
+        }
+      });
+    </script>
+
+    <!-- country code  -->
+    <!-- <script>
+          const phoneInputField = document.querySelector("#phone");
+          const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+              "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+          });
+        </script> -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Stop the form from submitting immediately
+          getCountryCode(); // Call the function to get the country code
+        });
+      });
+    </script>
+
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+
+      // Function to get the country code
+      function getCountryCode() {
+        // const countryCode = phoneInput.getSelectedCountryData().iso2;
+        sendMail("+91");
+      }
+    </script>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/bootstrap/js/bootstrap.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.js.map"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js.map"></script>
+
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+    <script src="assets/js/jquery.js"></script>
+
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!--bootstrap.min.js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- bootsnav js -->
+    <script src="assets/js/bootsnav.js"></script>
+
+    <!--owl.carousel.js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

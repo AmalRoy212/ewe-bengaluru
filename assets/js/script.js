@@ -80,42 +80,29 @@ updateTimer();
 // });
 
 function sendMail(countryCode) {
-    const registrationCode = document.getElementById("registrationCode").value;
-    const title = document.getElementById("title").value;
-    const firstname = document.getElementById("firstname").value;
-    const lastname = document.getElementById("lastname").value;
-    const jobtitle = document.getElementById("jobtitle").value;
-    const companyname = document.getElementById("companyname").value;
+    const registrationCode = document.getElementById("regCode").value;
+    const firstname = document.getElementById("firstName").value;
+    const lastname = document.getElementById("lastName").value;
+    const jobtitle = document.getElementById("jobTitle").value;
+    const companyname = document.getElementById("company").value;
     const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+    const phone = document.getElementById("mobile").value;
     const industry = document.getElementById("industry").value;
     const country = document.getElementById("country").value;
     const employees = document.getElementById("employees").value;
     const solutions = document.getElementById("solutions").value;
-    const role = document.getElementById("role").value;
-    const budget = document.getElementById("budget").value;
-    const timing = document.getElementById("timing").value;
+    const role = document.getElementById("authority").value;
+    const budget = document.getElementById("funding").value;
+    const timing = document.getElementById("implementation").value;
 
-    const referee_fullname = document.getElementById("referee_fullname").value;
-    const referee_companyname = document.getElementById(
-        "referee_companyname"
-    ).value;
-    const referee_jobtitle = document.getElementById("referee_jobtitle").value;
-    const referee_emailid = document.getElementById("referee_emailid").value;
-    const referee_phoneno = document.getElementById("referee_phoneno").value;
+    const referee_fullname = document.getElementById("nomineeName").value;
+    const referee_companyname = document.getElementById("nomineeCompany").value;
+    const referee_emailid = document.getElementById("nomineeEmail").value;
+    const referee_phoneno = document.getElementById("nomineePhone").value;
 
-    const checkbox1 = document.getElementById("my_checkbox1");
-    const checkbox2 = document.getElementById("my_checkbox2");
-    const checkbox3 = document.getElementById("my_checkbox3");
-    const checkbox4 = document.getElementById("my_checkbox4");
-
-    const delegatesCheckbox = document.getElementById("delegate_radio");
-    const sponsorsCheckbox = document.getElementById("sponsor_radio");
-    const speakersCheckbox = document.getElementById("speaker_radio");
-    let typeOfUser;
+    const confirmationChecked = document.querySelector("input[name='confirmation']").checked;
 
     if (
-        !title ||
         !firstname ||
         !lastname ||
         !jobtitle ||
@@ -128,12 +115,10 @@ function sendMail(countryCode) {
         !solutions ||
         !role ||
         !budget ||
-        !timing
-        // ... Add conditions for other required fields here ...
+        !timing ||
+        !confirmationChecked
     ) {
-        if (title === "") {
-            alert("Please fill the required field title");
-        } else if (firstname === "") {
+        if (firstname === "") {
             alert("Please fill the required field first name");
         } else if (lastname === "") {
             alert("Please fill the required field last name");
@@ -147,10 +132,10 @@ function sendMail(countryCode) {
             alert("Please fill the required field mobile number");
         } else if (industry === "") {
             alert("Please fill the required field industry");
-        } else if (country === null) {
+        } else if (country === "") {
             alert("Please fill the required field country");
         } else if (employees === "") {
-            alert("Please fill the required field empoyees");
+            alert("Please fill the required field employees");
         } else if (solutions === "") {
             alert("Please fill the required field solution");
         } else if (role === "") {
@@ -159,185 +144,17 @@ function sendMail(countryCode) {
             alert("Please fill the required field budget");
         } else if (timing === "") {
             alert("Please fill the required field timing");
+        } else if (!confirmationChecked) {
+            alert("You must agree to the terms and conditions.");
         }
-
-        return; // Exit the function early if any field is empty
-    }
-
-    if (email) {
-        checkMail(email)
-    }
-
-    if (
-        delegatesCheckbox.checked ||
-        sponsorsCheckbox.checked ||
-        speakersCheckbox.checked
-    ) {
-        if (delegatesCheckbox.checked) {
-            typeOfUser = delegatesCheckbox.value;
-        } else if (sponsorsCheckbox.checked) {
-            typeOfUser = sponsorsCheckbox.value;
-        } else if (speakersCheckbox.checked) {
-            typeOfUser = speakersCheckbox.value;
-        }
-    } else {
-        alert(
-            "Please let us know what you looking for Delegate, Sponsor or Speaker"
-        );
-    }
-
-    if (!checkbox1.checked || !checkbox4.checked) {
-        alert("You must select the required checkbox.");
         return;
     }
 
-    // Get the checkbox state message based on whether it's checked or not
-    const checkboxState1 = checkbox1.checked
-        ? "The checkbox is checked."
-        : "The checkbox is not checked.";
-    const checkboxState2 = checkbox2.checked
-        ? "The checkbox is checked."
-        : "The checkbox is not checked.";
-    const checkboxState3 = checkbox3.checked
-        ? "The checkbox is checked."
-        : "The checkbox is not checked.";
-    const checkboxState4 = checkbox4.checked
-        ? "The checkbox is checked."
-        : "The checkbox is not checked.";
-
-    // function handling the data sending to api
-    (function sendDataToApi() {
-        const apiUrl = "https://omanditsadmin.vercel.app/api/delegate";
-        // https://omanditsadmin.vercel.app/api/delegate
-        // http://localhost:3000/api/delegate
-
-        fetch(apiUrl, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                // Add any other headers if needed
-            },
-            body: JSON.stringify({
-                name: firstname,
-                lastName: lastname,
-                email: email,
-                jobTitle: jobtitle,
-                companyName: companyname,
-                phone: phone,
-                industry: industry,
-                numOfEmployees: employees,
-                lookingFor: solutions,
-                role: role,
-                country: country,
-                type: typeOfUser,
-                budget,
-                timing,
-                refName: referee_fullname,
-                refCompanyName: referee_companyname,
-                refJobTitle: referee_jobtitle,
-                refEmail: referee_emailid,
-                refPhone: referee_phoneno,
-            }),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                if (data.error) {
-                    const params = {
-                        registrationCode,
-                        title,
-                        firstname,
-                        lastname,
-                        jobtitle,
-                        companyname,
-                        email,
-                        phone,
-                        industry,
-                        country,
-                        employees,
-                        solutions,
-                        role,
-                        countryCode,
-                        typeOfUser,
-                        budget,
-                        timing,
-                        error: data,
-                        errMsg: data.error,
-
-                        referee_fullname,
-                        referee_companyname,
-                        referee_jobtitle,
-                        referee_emailid,
-                        referee_phoneno,
-
-                        checkboxState1,
-                        checkboxState2,
-                        checkboxState3,
-                        checkboxState4,
-                    };
-
-                    const service = "service_zh5dx4k";
-                    const template = "template_pjgy813";
-
-                    emailjs
-                        .send(service, template, params, "g7A8AmcmomsOelWRo")
-                        .then((res) => { })
-                        .catch((error) => {
-                            alert(error)
-                        });
-                }
-            })
-            .catch((error) => {
-
-                // console.log(error,"ajshkajsdkahghgjasgkjk");
-
-                const params = {
-                    registrationCode,
-                    title,
-                    firstname,
-                    lastname,
-                    jobtitle,
-                    companyname,
-                    email,
-                    phone,
-                    industry,
-                    country,
-                    employees,
-                    solutions,
-                    role,
-                    countryCode,
-                    typeOfUser,
-                    budget,
-                    timing,
-                    error: error,
-                    errMsg: error.error,
-
-                    referee_fullname,
-                    referee_companyname,
-                    referee_jobtitle,
-                    referee_emailid,
-                    referee_phoneno,
-
-                    checkboxState1,
-                    checkboxState2,
-                    checkboxState3,
-                    checkboxState4,
-                };
-
-                const service = "service_zh5dx4k";
-                const template = "template_pjgy813";
-
-                emailjs
-                    .send(service, template, params, "g7A8AmcmomsOelWRo")
-                    .then((res) => { })
-                    .catch((error) => {
-                        alert(error)
-                    });
-            });
-    })();
+    // if (email) {
+    //     checkMail(email);
+    // }
 
     const params = {
-        registrationCode,
-        title,
         firstname,
         lastname,
         jobtitle,
@@ -350,53 +167,32 @@ function sendMail(countryCode) {
         solutions,
         role,
         countryCode,
-        typeOfUser,
         budget,
         timing,
-
         referee_fullname,
         referee_companyname,
-        referee_jobtitle,
         referee_emailid,
         referee_phoneno,
-
-        checkboxState1,
-        checkboxState2,
-        checkboxState3,
-        checkboxState4,
+        confirmationChecked
     };
-    const serviceID = "service_vzxb1iq";
-    const templateID = "template_neln6bf";
 
-    // const catchServiceID = "service_jjrkcks";
-    // const catchTemplateID ="template_m4d4fgu"
-
-    // emailjs
-    //   .send(catchServiceID, catchTemplateID, params, "PvMR2IPn8ir0VCUQu")
-    //   .then((res) => {
-    //     console.log("completed");
-    //   })
-    //   .catch((error) => {
-    //     console.log(error)
-    //   });
+    const serviceID = "service_b829gxc";
+    const templateID = "template_zktmf2g";
 
     emailjs
-        .send(serviceID, templateID, params, "VPj_hs0ZLWpFpOWuX")
+        .send(serviceID, templateID, params, 'r2xBux3zxL5hcXfDg')
         .then((res) => {
-            alert(`Thank you for your recent inquiry.We greatly appreciate your interest and the time you've taken to reach out to us.
-        Your message has been received, and please consider this communication as confirmation that your application has been successfully submitted.Our event steering committee will diligently evaluate your request and endeavor to provide you with a response within the next 48 hours.
-        Should you have any questions, require further information, or wish to discuss any specifics, please don't hesitate to contact us via email at mohammad.afsal@genfinityglobal.com. We're here to assist and address any concerns you may have.
-        Thank you once again for considering our event.We look forward to the possibility of collaborating with you.`);
-            window.location.href = 'https://omandits.com/'
+            alert("Thank you for your recent inquiry. We greatly appreciate your interest. Your application has been successfully submitted. Our event steering committee will review your request within 48 hours. For questions, please contact us at mohammad.afsal@genfinityglobal.com.");
         })
         .catch((error) => {
-            console.log(error)
-            alert(error)
+            console.log(error);
+            alert("Error occurred while submitting the form: " + error);
         });
 }
 
+
 function checkMail(inp) {
-    const element = document.getElementById('indicator');
+    const element = document.getElementById('label-email');
     const newVal = inp.split('@');
     const curr = newVal[1].split('.');
     if (curr[0] === 'gmail') {
