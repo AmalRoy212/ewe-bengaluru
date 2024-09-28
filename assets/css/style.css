@@ -36,7 +36,16 @@ font-family: 'Rufina', serif;
 .sanskrit {
     font-family: myFont;
     font-size: 150px;
-    color: red !important;
+    color: white !important;
+    /* color: rgb(241, 117, 10) !important; */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sanskrit-blue {
+    font-family: myFont;
+    font-size: 150px;
+    color: #2a2d54 !important;
+    /* color: rgb(241, 117, 10) !important; */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 

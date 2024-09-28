@@ -140,9 +140,9 @@
                   <li class="scroll">
                     <a href="#featured-cars">Featured Technologies</a>
                   </li>
-                  <li class="scroll"><a href="/delegate.html" onclick="window.location.href='/delegate.html'">Delegates</a></li>
-                  <li class="scroll"><a href="index.html" onclick="window.location.href='/sponsor.html'">Sponsors</a></li>
-                  <li class="scroll"><a href="index.html" onclick="window.location.href='/speaker.html'">Speakers</a></li>
+                  <li class="scroll"><a href="/delegate.html" onclick="window.location.href='/delegate.html'">Visitors Enquiry</a></li>
+                  <li class="scroll"><a href="index.html" onclick="window.location.href='/sponsor.html'">Sponsorship Enquiry</a></li>
+                  <!-- <li class="scroll"><a href="index.html" onclick="window.location.href='/speaker.html'">Speakers</a></li> -->
                   <!-- <li class="scroll"><a href="#new-cars">Agenda</a></li> -->
                   <!-- <li class="scroll"><a href="#brand">brands</a></li>
                   <li class="scroll"><a href="#contact">contact</a></li> -->
@@ -164,13 +164,15 @@
 
       <div class="container hero" >
         <div class="welcome-hero-txt">
-          <h2 class="sanskrit">ECHO WAVE EXPO</h2>
-          <p style="font-size:30px;">Illuminating the Future of Sound and Light</p>
+          <h2 class="sanskrit">ECHOWAVE EXPO</h2>
+          <p style="font-size:24px; color: #02f73f;">Illuminating the Future of Sound and Light</p>
           <p style="font-size: 24px;">9-10 August, 2025 Bengaluru</p>
-          <div style="display: flex; justify-content: center; width: 100%; gap: 10px;">
-            <button class="welcome-btn" onclick="window.location.href='/delegate.html'">DELEGATES ENQUIRY </button>
-            <button class="welcome-btn" onclick="window.location.href='/sponsor.html'">SPONSORS ENQUIRY </button>
-            <button class="welcome-btn" onclick="window.location.href='/speaker.html'">SPEAKERS ENQUIRY </button>
+          <div 
+           
+           >
+            <button class="welcome-btn" onclick="window.location.href='/delegate.html'">Visitors Enquiry </button>
+            <button class="welcome-btn" onclick="window.location.href='/sponsor.html'">Sponsorship Enquiry </button>
+            <!-- <button class="welcome-btn" onclick="window.location.href='/speaker.html'">SPEAKERS ENQUIRY </button> -->
           </div>
         </div>
       </div>
@@ -179,8 +181,8 @@
         <div class="row" style="margin-bottom: 5rem;">
           <div class="col-md-12">
             <div class="model-search-content">
-              <div class="row" style="display: flex; justify-content: center;">
-                <div class="col-md-offset-1 col-md-2 col-sm-12">
+              <div class="row">
+                <div class="col-md-offset-1 col-md-2 col-sm-12" style="display: flex; justify-content: center;">
                   <div class="single-model-search">
                     <h2>DAYS</h2>
                     <span
@@ -188,14 +190,16 @@
                         font-size: xx-large;
                         font-weight: 600;
                         color: black;
+                        display: flex;
+                        justify-content: center;
                       "
                       id="days"
                       >112</span
                     >
                   </div>
-                  <div class="single-model-search"></div>
+                  <!-- <div class="single-model-search"></div> -->
                 </div>
-                <div class="col-md-offset-1 col-md-2 col-sm-12">
+                <div class="col-md-offset-x-1 col-md-2 col-sm-12" style="display: flex; justify-content: center;">
                   <div class="single-model-search">
                     <h2>HOURS</h2>
                     <span
@@ -203,12 +207,14 @@
                         font-size: xx-large;
                         font-weight: 600;
                         color: black;
+                        display: flex;
+                        justify-content: center;
                       "
                       id="hours"
                     ></span>
                   </div>
                 </div>
-                <div class="col-md-offset-1 col-md-2 col-sm-12">
+                <div class="col-md-offset-1 col-md-2 col-sm-12" style="display: flex; justify-content: center;">
                   <div class="single-model-search">
                     <h2>MINUTES</h2>
                     <span
@@ -216,12 +222,14 @@
                         font-size: xx-large;
                         font-weight: 600;
                         color: black;
+                        display: flex;
+                        justify-content: center;
                       "
                       id="minutes"
                     ></span>
                   </div>
                 </div>
-                <div class="col-md-offset-1 col-md-2 col-sm-12">
+                <div class="col-md-offset-1 col-md-2 col-sm-12" style="display: flex; justify-content: center;">
                   <div class="single-model-search">
                     <h2>Seconds</h2>
                     <span
@@ -229,6 +237,8 @@
                         font-size: xx-large;
                         font-weight: 600;
                         color: black;
+                        display: flex;
+                        justify-content: center;
                       "
                       id="seconds"
                     ></span>
@@ -762,7 +772,7 @@
     </section>
 
     <!--Equipment Showcase start -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience" style="width: 100%; overflow: hidden;">
       <div class="section-heading text-center">
         <h2 class="text-6xl">Comprehensive Equipment Showcase</h2>
       </div>
@@ -1694,7 +1704,7 @@
     </section>
 
     <!--experience start -->
-    <section id="experience" class="experience">
+    <!-- <section id="experience" class="experience">
       <div class="section-heading text-center">
         <h2 class="text-6xl">Event Schedule</h2>
       </div>
@@ -1719,14 +1729,11 @@
                           src="./assets/images/fetured/clock.jpg"
                         />
                       </div>
-                      <!--/.experience-time-->
                     </div>
-                    <!--/.col-->
                     <div class="col-md-offset-1 col-md-5" data-aos="fade-left">
                       <div class="timeline">
                         <div class="timeline-content">
                           <h4 class="title">
-                            <!-- <span><i class="fa fa-circle" aria-hidden="true"></i></span> -->
                           </h4>
                           <h3>Day 1 - August 09, 2025</h3>
                           <p class="description md:pt-10">
@@ -1746,9 +1753,7 @@
                             • 12:30 - 14:00: Lunch Break & Networking
                           </p>
                         </div>
-                        <!--/.timeline-content-->
                       </div>
-                      <!--/.timeline-->
                       <div class="timeline" data-aos="fade-left">
                         <div class="timeline-content">
                           <p class="description md:pt-10">
@@ -1770,14 +1775,10 @@
                             Networking
                           </p>
                         </div>
-                        <!--/.timeline-content-->
                       </div>
-                      <!--/.timeline-->
                     </div>
-                    <!--/.col-->
                   </div>
                 </div>
-                <!--/.single-timeline-box-->
               </li>
 
               <li>
@@ -1794,9 +1795,7 @@
                         </h2>
                         <h3 data-aos="fade-right">Day 2 - August 10, 2025</h3>
                       </div>
-                      <!--/.experience-time-->
                     </div>
-                    <!--/.col-->
                     <div class="col-md-5" data-aos="fade-right">
                       <div class="timeline">
                         <div class="timeline-content text-right">
@@ -1818,9 +1817,7 @@
                             Future of Audio-Visual Technology"
                           </p>
                         </div>
-                        <!--/.timeline-content-->
                       </div>
-                      <!--/.timeline-->
                       <div class="timeline">
                         <div class="timeline-content text-right">
                           <p class="description md:pt-10">
@@ -1833,11 +1830,8 @@
                             Exhibition Wrap Up
                           </p>
                         </div>
-                        <!--/.timeline-content-->
                       </div>
-                      <!--/.timeline-->
                     </div>
-                    <!--/.col-->
                     <div
                       class="col-md-offset-1 col-md-5 experience-time-main"
                       data-aos="fade-left"
@@ -1859,20 +1853,15 @@
                           src="./assets/images/fetured/sound.png"
                         />
                       </div>
-                      <!--/.experience-time-->
                     </div>
-                    <!--/.col-->
                   </div>
                 </div>
-                <!--/.single-timeline-box-->
               </li>
             </ul>
           </div>
-          <!--.main-timeline-->
         </div>
-        <!--.experience-content-->
       </div>
-    </section>
+    </section> -->
     <!--/.experience-->
     <!--experience end -->
 
@@ -1887,15 +1876,16 @@
           align-items: center;
           flex-direction: column;
           margin-bottom: 5rem;
-          margin-top: -10rem;
+          margin-top: 10rem;
         "
       >
-        <h1>Secure Your Spot at EchoWave V1.1</h1>
-        <p style="text-align: center">
-          Join us at <strong>EchoWave V1.1</strong> and immerse yourself in the
+        <h1>Secure Your Spot at <span class="sanskrit-blue" style="font-size: 34px; margin-left: 10px;">EchoWave</span></h1>
+        <p style="text-align: center; margin-top: 20px;">
+          Join us at <span class="sanskrit-blue" style="font-size: 24px; margin-left: 10px; margin-right: 10px;">EchoWave</span> and immerse yourself in the
           future of sound and light. Be the first to explore groundbreaking
           audiovisual experiences and connect with like-minded enthusiasts.
         </p>
+        <br>
         <h2>Early Bird Discounts Available!</h2>
         <ul>
           <li>
@@ -1903,14 +1893,16 @@
             before <strong>November 30, 2024</strong>.
           </li>
         </ul>
-        <h2>How to Register:</h2>
+        <br>
+        <h2>How to Register</h2>
         <p>
           Email us at
-          <a href="mailto:info@genfinityglobal.com">info@genfinityglobal.com</a>
+          <a style="font-size: medium;" href="mailto:info@genfinityglobal.com">info@genfinityglobal.com</a>
           to complete your registration.
         </p>
-        <div>
-          <a href="/delegate.html" class="button">Register Now</a>
+        <br>
+        <div class="btn btn-primary">
+          <a href="/delegate.html" class="button" style="color: white;">Register Now</a>
         </div>
       </div>
     </section>
@@ -2234,8 +2226,8 @@
           <div class="row">
             <div class="col-md-3 col-sm-6">
               <div class="single-footer-widget">
-                <div class="footer-logo">
-                  <a href="index.html">ECHO WAVE EXPO</a>
+                <div class="">
+                  <a class="sanskrit" style="font-size: 34px;" href="index.html">ECHO WAVE EXPO</a>
                 </div>
                 <p>
                   For any queries or additional information, please reach out to
@@ -2337,7 +2329,7 @@
               </p>
               <!--/p-->
             </div>
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-6">
               <div class="footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -2345,7 +2337,7 @@
                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                 <a href="#"><i class="fa fa-behance"></i></a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <!--/.footer-copyright-->
