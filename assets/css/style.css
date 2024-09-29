@@ -50,7 +50,12 @@ font-family: 'Rufina', serif;
 }
 
 .hero{
-    height: 100vh;
+    height: 105vh;
+}
+
+.font-tag{
+    font-size:34px !important; 
+    color: #f7e302 !important;
 }
 
 /* Media query for devices with a max width of 1200px */
@@ -77,10 +82,13 @@ font-family: 'Rufina', serif;
 /* Media query for devices with a max width of 576px */
 @media (max-width: 576px) {
     .sanskrit {
-        font-size: 80px;
+        font-size: 80px !important;
     }
     .hero{
-        height: 60vh;
+        height: 80vh;
+    }
+    .font-tag{
+        font-size:20px !important; 
     }
 }
 
