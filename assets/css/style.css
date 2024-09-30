@@ -40,7 +40,19 @@ font-family: 'Rufina', serif;
     /* color: rgb(241, 117, 10) !important; */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
+.sanskrit-header {
+    font-family: myFont;
+    font-size: 34px;
+    color: white !important;
+    /* color: rgb(241, 117, 10) !important; */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.h-con{
+    padding-top: 1rem;
+}
+.show-hide{
+    display: none;
+}
 .sanskrit-blue {
     font-family: myFont;
     font-size: 150px;
@@ -50,11 +62,11 @@ font-family: 'Rufina', serif;
 }
 
 .hero{
-    height: 105vh;
+    height: 110vh;
 }
 
 .font-tag{
-    font-size:34px !important; 
+    font-size:28px !important; 
     color: #f7e302 !important;
 }
 
@@ -85,10 +97,16 @@ font-family: 'Rufina', serif;
         font-size: 80px !important;
     }
     .hero{
-        height: 80vh;
+        height: 75vh;
     }
     .font-tag{
         font-size:20px !important; 
+    }
+    .h-con{
+        padding-top: 1rem;
+    }
+    .show-hide{
+        display: flex;
     }
 }
 
@@ -351,11 +369,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 .welcome-btn {
     display: inline-block;
-    width: 230px;
-    height: 60px;
+    width: 190px;
+    height: 45px;
+    padding: 10px;
     background: #4e4ffa;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 10px;
     margin-top: 55px;
     -webkit-transition: .3s linear; 
     -moz-transition:.3s linear; 
