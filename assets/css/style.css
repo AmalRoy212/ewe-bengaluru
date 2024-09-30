@@ -75,6 +75,9 @@ font-family: 'Rufina', serif;
     .sanskrit {
         font-size: 120px;
     }
+    .hero{
+        height: 90vh;
+    }
 }
 
 /* Media query for devices with a max width of 992px */
@@ -82,12 +85,18 @@ font-family: 'Rufina', serif;
     .sanskrit {
         font-size: 100px;
     }
+    .hero{
+        height: 90vh;
+    }
 }
 
 /* Media query for devices with a max width of 768px */
 @media (max-width: 768px) {
     .sanskrit {
         font-size: 80px;
+    }
+    .hero{
+        height: 90vh;
     }
 }
 
