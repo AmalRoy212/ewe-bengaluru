@@ -188,7 +188,7 @@ function sendMail(countryCode) {
     emailjs
         .send(serviceID, templateID, params, 'r2xBux3zxL5hcXfDg')
         .then((res) => {
-            alert("Thank you for your recent inquiry. We greatly appreciate your interest. Your application has been successfully submitted. Our event steering committee will review your request within 48 hours. For questions, please contact us at mohammad.afsal@genfinityglobal.com.");
+            alert("Thank you for your enquiry, one of our team member will get in touch with you shortly.");
             window.location.href='https://amalroy212.github.io/ewe-bengaluru/' //change when go live
         })
         .catch((error) => {
