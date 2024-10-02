@@ -70,6 +70,11 @@ font-family: 'Rufina', serif;
     color: #f7e302 !important;
 }
 
+.form-row{
+    display: flex;
+    justify-content: center;
+}
+
 /* Media query for devices with a max width of 1200px */
 @media (max-width: 1200px) {
     .sanskrit {
@@ -116,6 +121,11 @@ font-family: 'Rufina', serif;
     }
     .show-hide{
         display: flex;
+    }
+
+    .form-row{
+        display: contents;
+        justify-content: center;
     }
 }
 

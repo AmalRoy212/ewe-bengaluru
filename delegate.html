@@ -143,7 +143,7 @@
                   <li class="scroll">
                     <a href=""  onclick="window.location.href='/index.html'">Featured Technologies</a>
                   </li>
-                  <li class="scroll"><a href="index.html" onclick="window.location.href='/sponsor.html'">Sponsorship Enquiry</a></li>
+                  <!-- <li class="scroll"><a href="index.html" onclick="window.location.href='/sponsor.html'">Sponsorship Enquiry</a></li> -->
                   <!-- <li class="scroll"><a href="index.html" onclick="window.location.href='/speaker.html'">Speakers</a></li> -->
                   <!-- <li class="scroll"><a href="#brand">brands</a></li>
                   <li class="scroll"><a href="#contact">contact</a></li> -->
@@ -167,9 +167,9 @@
     <!-- Delegate Registration Form Section -->
     <section id="registration" style="padding: 50px 0; margin-top: 10rem">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 style="font-size: xx-large">Visitors Registration Form</h2>
+        <div class="row form-row">
+          <div class="col-md-8">
+            <h2 style="font-size: xx-large">Enquiry Form</h2>
             <form>
               <!-- Delegate Information Section -->
               <div class="form-group row">
@@ -282,6 +282,26 @@
               </div>
 
               <div class="form-group row">
+                <div class="col-md-12 mt-5">
+                  <label
+                    for="industry"
+                    style="font-size: medium; font-weight: 300"
+                    >Exhibiting or Sponsorship</label
+                  >
+                  <select
+                    id="exhibiting"
+                    class="form-control"
+                    name="exhibiting"
+                    required
+                  >
+                    <option value="" disabled selected>Please select</option>
+                    <option value="exhibiting">Exhibiting</option>
+                    <option value="sponsorship">Sponsorship</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- <div class="form-group row">
                 <div class="col-md-6 mt-5">
                   <label
                     for="industry"
@@ -555,7 +575,6 @@
                     <option value="Esports">Esports</option>
                     <option value="Others">Others</option>
                   </select>
-                  <!-- Add your options here -->
                 </div>
                 <div class="col-md-6 mt-5">
                   <label
@@ -570,13 +589,11 @@
                     required
                   >
                     <option value="" disabled selected>Select Country</option>
-                    <!-- Add your options here -->
                   </select>
                 </div>
-              </div>
+              </div> -->
 
-              <!-- Additional Information -->
-              <div class="form-group row">
+              <!-- <div class="form-group row">
                 <div class="col-md-6 mt-5">
                   <label
                     for="employees"
@@ -688,11 +705,10 @@
                     </option>
                     <option value="Others">Others</option>
                   </select>
-                  <!-- Add your options here -->
                 </div>
-              </div>
+              </div> -->
 
-              <div class="form-group row">
+              <!-- <div class="form-group row">
                 <div class="col-md-6 mt-5">
                   <label
                     for="authority"
@@ -718,7 +734,6 @@
                     <option value="I'm not involved at all">
                       I'm not involved at all
                     </option>
-                    <!-- Add your options here -->
                   </select>
                 </div>
                 <div class="col-md-6 mt-5">
@@ -766,9 +781,9 @@
                     </option>
                   </select>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="form-group row">
+              <!-- <div class="form-group row">
                 <div class="col-md-6">
                   <label
                     for="implementation"
@@ -786,13 +801,11 @@
                     <option value="3 - 6 months">3 - 6 months</option>
                     <option value="6 - 9 months">6 - 9 months</option>
                     <option value="1 - year">1 - year</option>
-                    <!-- Add your options here -->
                   </select>
                 </div>
-              </div>
+              </div> -->
 
-              <!-- Nominate Someone Section -->
-              <h3 class="mt-10 mb-6">
+              <!-- <h3 class="mt-10 mb-6">
                 Would you like to nominate/refer someone to attend the event?
               </h3>
               <div class="form-group row">
@@ -851,9 +864,8 @@
                     class="form-control"
                   />
                 </div>
-              </div>
+              </div> -->
 
-              <!-- Confirmation Section -->
               <div class="form-group row">
                 <div class="col-md-12">
                   <label style="font-size: medium; font-weight: 300">

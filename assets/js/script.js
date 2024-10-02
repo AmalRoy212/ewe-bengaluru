@@ -80,25 +80,26 @@ updateTimer();
 // });
 
 function sendMail(countryCode) {
-    const registrationCode = document.getElementById("regCode").value;
+    // const registrationCode = document.getElementById("regCode").value;
     const firstname = document.getElementById("firstName").value;
     const lastname = document.getElementById("lastName").value;
     const jobtitle = document.getElementById("jobTitle").value;
     const companyname = document.getElementById("company").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("mobile").value;
-    const industry = document.getElementById("industry").value;
-    const country = document.getElementById("country").value;
-    const employees = document.getElementById("employees").value;
-    const solutions = document.getElementById("solutions").value;
-    const role = document.getElementById("authority").value;
-    const budget = document.getElementById("funding").value;
-    const timing = document.getElementById("implementation").value;
+    const exhibiting = document.getElementById("exhibiting").value;
+    // const industry = document.getElementById("industry").value;
+    // const country = document.getElementById("country").value;
+    // const employees = document.getElementById("employees").value;
+    // const solutions = document.getElementById("solutions").value;
+    // const role = document.getElementById("authority").value;
+    // const budget = document.getElementById("funding").value;
+    // const timing = document.getElementById("implementation").value;
 
-    const referee_fullname = document.getElementById("nomineeName").value;
-    const referee_companyname = document.getElementById("nomineeCompany").value;
-    const referee_emailid = document.getElementById("nomineeEmail").value;
-    const referee_phoneno = document.getElementById("nomineePhone").value;
+    // const referee_fullname = document.getElementById("nomineeName").value;
+    // const referee_companyname = document.getElementById("nomineeCompany").value;
+    // const referee_emailid = document.getElementById("nomineeEmail").value;
+    // const referee_phoneno = document.getElementById("nomineePhone").value;
 
     const confirmationChecked = document.querySelector("input[name='confirmation']").checked;
 
@@ -109,13 +110,14 @@ function sendMail(countryCode) {
         !companyname ||
         !email ||
         !phone ||
-        !industry ||
-        !country ||
-        !employees ||
-        !solutions ||
-        !role ||
-        !budget ||
-        !timing ||
+        !exhibiting ||
+        // !industry ||
+        // !country ||
+        // !employees ||
+        // !solutions ||
+        // !role ||
+        // !budget ||
+        // !timing ||
         !confirmationChecked
     ) {
         if (firstname === "") {
@@ -130,23 +132,26 @@ function sendMail(countryCode) {
             alert("Please fill the required field email");
         } else if (phone === "") {
             alert("Please fill the required field mobile number");
-        } else if (industry === "") {
-            alert("Please fill the required field industry");
-        } else if (country === "") {
-            alert("Please fill the required field country");
-        } else if (employees === "") {
-            alert("Please fill the required field employees");
-        } else if (solutions === "") {
-            alert("Please fill the required field solution");
-        } else if (role === "") {
-            alert("Please fill the required field role");
-        } else if (budget === "") {
-            alert("Please fill the required field budget");
-        } else if (timing === "") {
-            alert("Please fill the required field timing");
-        } else if (!confirmationChecked) {
-            alert("You must agree to the terms and conditions.");
+        }else if (exhibiting === "") {
+            alert("Please fill the required field exhibiting");
         }
+        // } else if (industry === "") {
+        //     alert("Please fill the required field industry");
+        // } else if (country === "") {
+        //     alert("Please fill the required field country");
+        // } else if (employees === "") {
+        //     alert("Please fill the required field employees");
+        // } else if (solutions === "") {
+        //     alert("Please fill the required field solution");
+        // } else if (role === "") {
+        //     alert("Please fill the required field role");
+        // } else if (budget === "") {
+        //     alert("Please fill the required field budget");
+        // } else if (timing === "") {
+        //     alert("Please fill the required field timing");
+        // } else if (!confirmationChecked) {
+        //     alert("You must agree to the terms and conditions.");
+        // }
         return;
     }
 
@@ -161,18 +166,19 @@ function sendMail(countryCode) {
         companyname,
         email,
         phone,
-        industry,
-        country,
-        employees,
-        solutions,
-        role,
-        countryCode,
-        budget,
-        timing,
-        referee_fullname,
-        referee_companyname,
-        referee_emailid,
-        referee_phoneno,
+        exhibiting,
+        // industry,
+        // country,
+        // employees,
+        // solutions,
+        // role,
+        // countryCode,
+        // budget,
+        // timing,
+        // referee_fullname,
+        // referee_companyname,
+        // referee_emailid,
+        // referee_phoneno,
         confirmationChecked
     };
 
