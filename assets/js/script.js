@@ -167,6 +167,7 @@ function sendMail(countryCode) {
         email,
         phone,
         exhibiting,
+        countryCode,
         // industry,
         // country,
         // employees,

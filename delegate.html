@@ -27,7 +27,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    
+
     <!-- title of site -->
     <title>EWE</title>
 
@@ -61,10 +61,16 @@
     <link rel="stylesheet" href="assets/css/bootsnav.css" />
 
     <!--style.css-->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
 
     <!--responsive.css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
 
     <script src="./assets/js/script.js" defer></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -85,6 +91,29 @@
         });
       })();
     </script>
+
+    <style>
+      .iti {
+        width: 100%;
+      }
+
+      .iti--separate-dial-code .iti__selected-flag {
+        width: auto;
+      }
+
+      .iti--separate-dial-code input {
+        padding-left: 65px; /* Adjust based on the country flag */
+      }
+
+      .iti__flag {
+        margin-right: 8px;
+      }
+
+      .iti__dropdown {
+        width: auto;
+        font-size: 14px; /* Adjust for your preference */
+      }
+    </style>
   </head>
 
   <body>
@@ -183,7 +212,7 @@
     </section>
 
     <!-- Delegate Registration Form Section -->
-    <section id="registration" style="padding: 50px 0; margin-top: 10rem">
+    <section id="registration" style="padding: 50px 0;">
       <div class="container">
         <div class="row form-row">
           <div class="col-md-8">
@@ -295,6 +324,7 @@
                     name="mobile"
                     class="form-control"
                     required
+                    style="width: 100% !important"
                   />
                 </div>
               </div>
@@ -885,9 +915,9 @@
               </div> -->
 
               <div class="form-group row">
-                <div class="col-md-12" style="font-size: x-small;">
+                <div class="col-md-12" style="font-size: small">
                   <p>
-                    By filling up this form, I agree to the above terms and
+                    By filling up this form, I agree to the below terms and
                     conditions. I officially and formally mark my acceptance to
                     participate at the event. I approve organizers to share the
                     contact information and/or other details filled in this form
@@ -898,7 +928,7 @@
                     conditions and Privacy policy of organizers.
                   </p>
                 </div>
-                <div class="col-md-12" style="margin-top: 1rem;">
+                <div class="col-md-12" style="margin-top: 1rem">
                   <label style="font-size: medium; font-weight: 300">
                     <input type="checkbox" name="confirmation" required />
                     By ticking this form, I agree to the above terms and
@@ -908,7 +938,6 @@
               </div>
               <div style="display: flex; justify-content: center; width: 100%">
                 <button
-                  type="submit"
                   class="btn btn-primary"
                   style="
                     font-size: larger;
@@ -1000,20 +1029,22 @@
             <div class="col-md-offset-1 col-md-3 col-sm-6">
               <div class="single-footer-widget">
                 <h2>Follow us on social media for updates and sneak peeks</h2>
-                <a
-                  style="color: white"
-                  href="https://www.instagram.com/echowaveexpo?igsh=MXI2czc5NjMwcHF5cg=="
-                  ><img
-                    style="width: 40px; height: 40px"
-                    src="./assets/images/logo/instagram.png"
-                /></a>
-                <a
-                  style="color: white"
-                  href="https://www.linkedin.com/showcase/echowave-expo/"
-                  ><img
-                    style="width: 40px; height: 40px"
-                    src="./assets/images/logo/linkedin.png"
-                /></a>
+                <div style="display: flex; gap: 10px;">
+                  <a
+                    style="color: white"
+                    href="https://www.instagram.com/echowaveexpo?igsh=MXI2czc5NjMwcHF5cg=="
+                    ><img
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/logo/instagram.png"
+                  /></a>
+                  <a
+                    style="color: white"
+                    href="https://www.linkedin.com/showcase/echowave-expo/"
+                    ><img
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/logo/linkedin.png"
+                  /></a>
+                </div>
               </div>
             </div>
             <div class="col-md-offset-1 col-md-3 col-sm-6">
@@ -1176,19 +1207,11 @@
               "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
           });
         </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form");
-        form.addEventListener("submit", function (event) {
-          event.preventDefault(); // Stop the form from submitting immediately
-          getCountryCode(); // Call the function to get the country code
-        });
-      });
-    </script>
-
-    <script>
-      const phoneInputField = document.querySelector("#phone");
+      const phoneInputField = document.querySelector("#mobile");
       const phoneInput = window.intlTelInput(phoneInputField, {
         utilsScript:
           "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
@@ -1196,9 +1219,17 @@
 
       // Function to get the country code
       function getCountryCode() {
-        // const countryCode = phoneInput.getSelectedCountryData().iso2;
-        sendMail("+91");
+        const countryCode = phoneInput.getSelectedCountryData().iso2;
+        sendMail(countryCode);
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Stop the form from submitting immediately
+          getCountryCode(); // Call the function to get the country code
+        });
+      });
     </script>
 
     <script src="./assets/js/script.js"></script>
