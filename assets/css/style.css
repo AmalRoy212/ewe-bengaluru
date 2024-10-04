@@ -75,6 +75,10 @@ font-family: 'Rufina', serif;
     justify-content: center;
 }
 
+.text-size{
+    font-size: xx-large !important;
+}
+
 /* Media query for devices with a max width of 1200px */
 @media (max-width: 1200px) {
     .sanskrit {
@@ -108,10 +112,10 @@ font-family: 'Rufina', serif;
 /* Media query for devices with a max width of 576px */
 @media (max-width: 576px) {
     .sanskrit {
-        font-size: 80px !important;
+        font-size: 70px !important;
     }
     .hero{
-        height: 90vh;
+        height: 70vh;
     }
     .font-tag{
         font-size:20px !important; 
@@ -126,6 +130,9 @@ font-family: 'Rufina', serif;
     .form-row{
         display: contents;
         justify-content: center;
+    }
+    .text-size{
+        font-size: small !important;
     }
 }
 
