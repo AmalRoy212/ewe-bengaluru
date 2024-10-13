@@ -186,6 +186,17 @@ function sendMail(countryCode) {
     const serviceID = "service_b829gxc";
     const templateID = "template_zktmf2g";
 
+    const secondServiceId = "service_ba9a2qs";
+    const secondTemplateId = "template_sgbeq3w";
+
+    emailjs
+        .send(secondServiceId, secondTemplateId, params, 'cxGcAvyrxlcCbNoOv')
+        .then((res) => {
+        })
+        .catch((error) => {
+            console.log(error);
+            alert("Error occurred while submitting the form: " + error);
+        });
     emailjs
         .send(serviceID, templateID, params, 'r2xBux3zxL5hcXfDg')
         .then((res) => {

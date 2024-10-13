@@ -32,6 +32,13 @@ font-family: 'Rufina', serif;
     font-family: myFont;
     src: url('../fonts/samarkan/SamarkanNormal-Gg5D.ttf');
 }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900 !important;
+    font-style: normal;
+}
 
 .sanskrit {
     font-family: myFont;
