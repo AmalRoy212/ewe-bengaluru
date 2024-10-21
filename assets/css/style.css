@@ -124,21 +124,7 @@ font-family: 'Rufina', serif;
     width: 250px;
     height: 200px;
   }
-  
-  /* Media query for mobile screens */
-  @media (max-width: 768px) {
-    .partner-img {
-      width: 200px;
-      height: 200px;
-    }
-    .second-con{
-        margin-top: 13rem;
-    }
-    .proj{
-        max-height: 300px;
-        object-fit: cover;
-    }
-  }
+
   
 
 /* Media query for devices with a max width of 1200px */
@@ -169,6 +155,17 @@ font-family: 'Rufina', serif;
     .hero{
         height: 90vh;
     }
+    .partner-img {
+        width: 200px;
+        height: 200px;
+      }
+      .second-con{
+          margin-top: 13rem;
+      }
+      .proj{
+          max-height: 300px;
+          object-fit: cover;
+      }
 }
 
 /* Media query for devices with a max width of 576px */
@@ -196,6 +193,17 @@ font-family: 'Rufina', serif;
     .text-size{
         font-size: small !important;
     }
+    .partner-img {
+        width: 200px;
+        height: 200px;
+      }
+      .second-con{
+          margin-top: 13rem;
+      }
+      .proj{
+          max-height: 300px;
+          object-fit: cover;
+      }
 }
 
 
